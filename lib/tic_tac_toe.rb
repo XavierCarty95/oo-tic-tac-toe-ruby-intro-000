@@ -38,8 +38,6 @@ class TicTacToe
 
   def valid_move?(input)
     if input.between?(0, 8) && !position_taken?(input)
-
-
   end
 
 
