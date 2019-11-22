@@ -30,13 +30,11 @@ class TicTacToe
    end
 
    def move(index , character = "X")
-     @index = index 
-     @character = character 
+     @index = index
+     @character = character
 
     def position_taken
       if @board[@index] == "" || @board[@index] == " " || @board[@index] == nil
          return false
-      else 
+      else
         return true
-      
-     
