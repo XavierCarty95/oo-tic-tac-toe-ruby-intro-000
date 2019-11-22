@@ -22,3 +22,21 @@ class TicTacToe
   [6, 4, 2],
   [0, 4, 8]
    ]
+
+   def input_to_index(input)
+     input = input.strip
+     @index = input - 1
+
+   end
+
+   def move(index , character = "X")
+     @index = index 
+     @character = character 
+
+    def position_taken
+      if @board[@index] == "" || @board[@index] == " " || @board[@index] == nil
+         return false
+      else 
+        return true
+      
+     
