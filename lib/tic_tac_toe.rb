@@ -37,7 +37,7 @@ class TicTacToe
   end
 
   def valid_move?(input)
-    input.between?(0, 8) && !position_taken?(input)
+    if input.between?(0, 8) && !position_taken?(input)
   end
 
 
@@ -113,3 +113,4 @@ class TicTacToe
       puts "Cat's Game!"
     end
   end
+end
